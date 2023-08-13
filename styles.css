@@ -1,0 +1,316 @@
+html {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86" width="42" height="42"><path d="M42.998 0C19.252 0 0 19.252 0 43c0 23.749 19.252 43 42.998 43C66.748 86 86 66.749 86 43 86 19.252 66.748 0 42.998 0zM46.5 77.825V58.5h-7.002v19.325C22.965 76.184 9.818 63.035 8.176 46.5H27.5v-7.002H8.176C9.818 22.964 22.965 9.816 39.498 8.175V27.5H46.5V8.175c16.537 1.642 29.684 14.79 31.326 31.323H58.5V46.5h19.326C76.184 63.035 63.037 76.182 46.5 77.825z" fill="%2353FF45"/></svg>') 21 21, auto;
+}
+
+* {
+  cursor: inherit;
+}
+
+body {
+  counter-reset: points;
+}
+
+.start {
+  text-shadow: 1px 1px 0px #53FF45;
+  transition: transform opacity 1.5s ease-out;
+  animation: opacityPulse 1.2s ease-out;
+  animation-iteration-count: infinite;
+}
+.game:target .start {
+  animation: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  right: 100px;
+  bottom: 0;
+  left: 100px;
+  opacity: 0;
+  transition: transform opacity 1.5s ease-out;
+}
+.game:target .content {
+  opacity: 1;
+}
+
+label {
+  position: absolute;
+  top: -130px;
+  width: 100px;
+  height: 100px;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+label:nth-of-type(1) {
+  left: 37%;
+  animation-duration: 10s;
+  animation-delay: 10s;
+}
+label:nth-of-type(2) {
+  left: 65%;
+  animation-duration: 10s;
+  animation-delay: 20s;
+}
+label:nth-of-type(3) {
+  left: 36%;
+  animation-duration: 10s;
+  animation-delay: 30s;
+}
+label:nth-of-type(4) {
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 40s;
+}
+label:nth-of-type(5) {
+  left: 84%;
+  animation-duration: 10s;
+  animation-delay: 50s;
+}
+label:nth-of-type(6) {
+  left: 78%;
+  animation-duration: 10s;
+  animation-delay: 60s;
+}
+label:nth-of-type(7) {
+  left: 38%;
+  animation-duration: 10s;
+  animation-delay: 70s;
+}
+label:nth-of-type(8) {
+  left: 80%;
+  animation-duration: 10s;
+  animation-delay: 80s;
+}
+label:nth-of-type(9) {
+  left: 57%;
+  animation-duration: 10s;
+  animation-delay: 90s;
+}
+label:nth-of-type(10) {
+  left: 7%;
+  animation-duration: 10s;
+  animation-delay: 100s;
+}
+label:nth-of-type(11) {
+  left: 14%;
+  animation-duration: 10s;
+  animation-delay: 110s;
+}
+label:nth-of-type(12) {
+  left: 46%;
+  animation-duration: 10s;
+  animation-delay: 120s;
+}
+label:nth-of-type(13) {
+  left: 34%;
+  animation-duration: 10s;
+  animation-delay: 130s;
+}
+label:nth-of-type(14) {
+  left: 67%;
+  animation-duration: 10s;
+  animation-delay: 140s;
+}
+label:nth-of-type(15) {
+  left: 93%;
+  animation-duration: 10s;
+  animation-delay: 150s;
+}
+label:nth-of-type(16) {
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 160s;
+}
+label:nth-of-type(17) {
+  left: 31%;
+  animation-duration: 10s;
+  animation-delay: 170s;
+}
+label:nth-of-type(18) {
+  left: 4%;
+  animation-duration: 10s;
+  animation-delay: 180s;
+}
+label:nth-of-type(19) {
+  left: 71%;
+  animation-duration: 10s;
+  animation-delay: 190s;
+}
+label:nth-of-type(20) {
+  left: 62%;
+  animation-duration: 10s;
+  animation-delay: 200s;
+}
+label:nth-of-type(21) {
+  left: 84%;
+  animation-duration: 10s;
+  animation-delay: 210s;
+}
+label:nth-of-type(22) {
+  left: 42%;
+  animation-duration: 10s;
+  animation-delay: 220s;
+}
+label:nth-of-type(23) {
+  left: 57%;
+  animation-duration: 10s;
+  animation-delay: 230s;
+}
+label:nth-of-type(24) {
+  left: 82%;
+  animation-duration: 10s;
+  animation-delay: 240s;
+}
+label:nth-of-type(25) {
+  left: 38%;
+  animation-duration: 10s;
+  animation-delay: 250s;
+}
+label:nth-of-type(26) {
+  left: 86%;
+  animation-duration: 10s;
+  animation-delay: 260s;
+}
+label:nth-of-type(27) {
+  left: 86%;
+  animation-duration: 10s;
+  animation-delay: 270s;
+}
+label:nth-of-type(28) {
+  left: 52%;
+  animation-duration: 10s;
+  animation-delay: 280s;
+}
+label:nth-of-type(29) {
+  left: 18%;
+  animation-duration: 10s;
+  animation-delay: 290s;
+}
+label:nth-of-type(30) {
+  left: 21%;
+  animation-duration: 10s;
+  animation-delay: 300s;
+}
+label:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background-image: radial-gradient(transparent 15%, white 15%, white 35%, transparent 0%, transparent 55%, white 0);
+  border-radius: 50%;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+  transition: opacity 1s ease-in-out;
+}
+input:checked + label:before {
+  opacity: 0;
+  filter: grayscale(100%);
+}
+label:after {
+  content: "+1";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.7em;
+  color: white;
+  text-shadow: 2px 2px 0px red;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+}
+.game:target label {
+  animation-name: crosshair-on;
+}
+input:checked + label {
+  animation-play-state: paused;
+  pointer-events: none;
+}
+input:checked + label:after {
+  animation: score-on 1.5s;
+}
+
+input {
+  opacity: 0;
+}
+input:checked {
+  counter-increment: points;
+  pointer-events: none;
+}
+
+.score:before {
+  content: counter(points);
+}
+.game:target .score {
+  transform: translateY(calc(100% - 50vh)) scale(2.2);
+  transition: transform 0.4s 310s ease-in-out;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  color: green;
+  background-color: blue;
+  user-select: none;
+}
+
+.start {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 0 red;
+}
+.start span {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 1.4em;
+  text-shadow: none;
+}
+
+.score {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #53FF45;
+  text-shadow: 2px 2px 0px red;
+  pointer-events: none;
+}
+
+@keyframes opacityPulse {
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+@keyframes crosshair-on {
+  100% {
+    transform: translateY(calc(102vh + 130px));
+  }
+}
+@keyframes score-on {
+  10% {
+    transform: translate(-50%, calc(-50% - 3em));
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

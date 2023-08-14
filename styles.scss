@@ -1,8 +1,8 @@
 $total-bullseye: 30;
-$bullseye-size: 100px;
+$bullseye-size: 120px;
 $bullseye-shadow-length: 15px;
 $bullseye-total-size: $bullseye-size + $bullseye-shadow-length * 2;
-$bullseye-animation-duration: 10s;
+$bullseye-animation-duration: 8s;
 $score-delay: $bullseye-animation-duration * ($total-bullseye + 1);
 $green: #53FF45;
 
@@ -126,13 +126,6 @@ input {
 }
 
 
-
-
-
-
-
-
-// Non important styles
 body {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
@@ -197,4 +190,3 @@ body {
     opacity: 0;
   }
 }
-
